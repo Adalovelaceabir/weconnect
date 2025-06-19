@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CollabHub - Creative Collaboration Platform</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Circular Navigation -->
+    <nav class="circular-nav">
+        <div class="nav-center">
+            <a href="#" class="nav-logo">
+                <svg viewBox="0 0 50 50" width="30" height="30">
+                    <circle cx="25" cy="25" r="20" fill="#6E56CF"/>
+                    <path d="M20,30 L30,30 L30,35 L20,35 Z M20,20 L35,20 L35,25 L20,25 Z" fill="white"/>
+                </svg>
+            </a>
+        </div>
+        <div class="nav-items">
+            <a href="#" class="nav-item" data-tooltip="Home">
+                <svg width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M12 2L2 7v13h6v-6h8v6h6V7z" fill="currentColor"/>
+                </svg>
+            </a>
+            <a href="#" class="nav-item" data-tooltip="Projects">
+                <svg width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M3 3h8v8H3zm10 0h8v8h-8zM3 13h8v8H3zm10 0h8v8h-8z" fill="currentColor"/>
+                </svg>
+            </a>
+            <a href="#" class="nav-item" data-tooltip="Connections">
+                <svg width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M12 4a4 4 0 014 4 4 4 0 01-4 4 4 4 0 01-4-4 4 4 0 014-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4z" fill="currentColor"/>
+                </svg>
+            </a>
+            <a href="#" class="nav-item" data-tooltip="Messages">
+                <svg width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" fill="currentColor"/>
+                </svg>
+            </a>
+        </div>
+        <div class="nav-profile">
+            <div class="profile-bubble">
+                <img src="assets/images/profile.jpg" alt="Profile">
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="content-grid">
+        <!-- Left Panel - Activity Stream -->
+        <section class="activity-panel">
+            <div class="status-card">
+                <div class="status-input">
+                    <img src="assets/images/profile.jpg" alt="Profile" class="status-profile">
+                    <input type="text" placeholder="Share a project update...">
+                </div>
+                <div class="status-options">
+                    <button class="status-option">
+                        <svg width="20" height="20"><path d="M19 13a1 1 0 01-1 1H6a1 1 0 01-1-1V3a1 1 0 011-1h12a1 1 0 011 1v10z" fill="currentColor"/></svg>
+                        Project
+                    </button>
+                    <button class="status-option">
+                        <svg width="20" height="20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" fill="currentColor"/></svg>
+                        Achievement
+                    </button>
+                    <button class="status-option">
+                        <svg width="20" height="20"><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z" fill="currentColor"/></svg>
+                        Media
+                    </button>
+                </div>
+            </div>
+
+            <div class="activity-feed">
+                <div class="activity-card">
+                    <div class="activity-header">
+                        <div class="activity-user">
+                            <img src="assets/images/user1.jpg" alt="User" class="user-avatar">
+                            <div>
+                                <h4>Alex Chen</h4>
+                                <p>Shared a project · 2h ago</p>
+                            </div>
+                        </div>
+                        <button class="activity-menu">
+                            <svg width="20" height="20"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" fill="currentColor"/></svg>
+                        </button>
+                    </div>
+                    <div class="activity-content">
+                        <p>Just launched the new website for GreenEarth Foundation. Check out the interactive sustainability dashboard we built!</p>
+                        <div class="project-preview">
+                            <div class="project-image" style="background-image: url('assets/images/project1.jpg')"></div>
+                            <div class="project-info">
+                                <h5>GreenEarth Foundation Website</h5>
+                                <p>Web Design · Development</p>
+                                <div class="project-stats">
+                                    <span>12 collaborators</span>
+                                    <span>4 weeks</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="activity-actions">
+                        <button class="action-btn">
+                            <svg width="20" height="20"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z" fill="currentColor"/></svg>
+                            Collaborate
+                        </button>
+                        <button class="action-btn">
+                            <svg width="20" height="20"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="currentColor"/></svg>
+                            Appreciate
+                        </button>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <div class="activity-header">
+                        <div class="activity-user">
+                            <img src="assets/images/user2.jpg" alt="User" class="user-avatar">
+                            <div>
+                                <h4>Maya Rodriguez</h4>
+                                <p>Posted an opportunity · 5h ago</p>
+                            </div>
+                        </div>
+                        <button class="activity-menu">
+                            <svg width="20" height="20"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" fill="currentColor"/></svg>
+                        </button>
+                    </div>
+                    <div class="activity-content">
+                        <p>Looking for a UX researcher to help with a 3-month project studying productivity tools for remote teams. Must have experience with ethnographic research methods.</p>
+                        <div class="opportunity-tags">
+                            <span>UX Research</span>
+                            <span>Remote</span>
+                            <span>3 months</span>
+                            <span>$5k-$8k</span>
+                        </div>
+                    </div>
+                    <div class="activity-actions">
+                        <button class="action-btn primary">Express Interest</button>
+                        <button class="action-btn">Save for Later</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Center Panel - Project Discovery -->
+        <section class="discovery-panel">
+            <div class="discovery-header">
+                <h3>Discover Projects</h3>
+                <div class="discovery-filters">
+                    <button class="filter-btn active">All</button>
+                    <button class="filter-btn">Design</button>
+                    <button class="filter-btn">Development</button>
+                    <button class="filter-btn">Writing</button>
+                    <button class="filter-btn">Marketing</button>
+                </div>
+            </div>
+
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('assets/images/project2.jpg')"></div>
+                    <div class="project-details">
+                        <h4>EcoFashion Brand Identity</h4>
+                        <p>Logo design and brand guidelines for sustainable clothing line</p>
+                        <div class="project-meta">
+                            <span>Graphic Design</span>
+                            <span>$2k-$3k</span>
+                        </div>
+                    </div>
+                    <div class="project-actions">
+                        <button class="project-btn">View Details</button>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('assets/images/project3.jpg')"></div>
+                    <div class="project-details">
+                        <h4>Mobile App Development</h4>
+                        <p>React Native app for fitness tracking with social features</p>
+                        <div class="project-meta">
+                            <span>Mobile Development</span>
+                            <span>$8k-$12k</span>
+                        </div>
+                    </div>
+                    <div class="project-actions">
+                        <button class="project-btn">View Details</button>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('assets/images/project4.jpg')"></div>
+                    <div class="project-details">
+                        <h4>Content Strategy</h4>
+                        <p>Develop content framework and editorial calendar for tech startup</p>
+                        <div class="project-meta">
+                            <span>Content Marketing</span>
+                            <span>$3k-$5k</span>
+                        </div>
+                    </div>
+                    <div class="project-actions">
+                        <button class="project-btn">View Details</button>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('assets/images/project5.jpg')"></div>
+                    <div class="project-details">
+                        <h4>AR Product Visualization</h4>
+                        <p>Create augmented reality product demos for furniture catalog</p>
+                        <div class="project-meta">
+                            <span>AR/VR</span>
+                            <span>$6k-$9k</span>
+                        </div>
+                    </div>
+                    <div class="project-actions">
+                        <button class="project-btn">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Right Panel - Connections & Messages -->
+        <section class="network-panel">
+            <div class="network-tabs">
+                <button class="network-tab active">Connections</button>
+                <button class="network-tab">Messages</button>
+            </div>
+
+            <div class="connections-list">
+                <div class="connection-card">
+                    <img src="assets/images/user3.jpg" alt="User" class="connection-avatar">
+                    <div class="connection-info">
+                        <h4>Jamal Williams</h4>
+                        <p>Product Designer · San Francisco</p>
+                        <div class="connection-skills">
+                            <span>UI/UX</span>
+                            <span>Figma</span>
+                            <span>Prototyping</span>
+                        </div>
+                    </div>
+                    <button class="connection-action">
+                        <svg width="20" height="20"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" fill="currentColor"/></svg>
+                    </button>
+                </div>
+
+                <div class="connection-card">
+                    <img src="assets/images/user4.jpg" alt="User" class="connection-avatar">
+                    <div class="connection-info">
+                        <h4>Priya Patel</h4>
+                        <p>Full Stack Developer · Bangalore</p>
+                        <div class="connection-skills">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>GraphQL</span>
+                        </div>
+                    </div>
+                    <button class="connection-action">
+                        <svg width="20" height="20"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" fill="currentColor"/></svg>
+                    </button>
+                </div>
+
+                <div class="connection-card">
+                    <img src="assets/images/user5.jpg" alt="User" class="connection-avatar">
+                    <div class="connection-info">
+                        <h4>Elena Müller</h4>
+                        <p>Content Strategist · Berlin</p>
+                        <div class="connection-skills">
+                            <span>SEO</span>
+                            <span>Copywriting</span>
+                            <span>Editing</span>
+                        </div>
+                    </div>
+                    <button class="connection-action">
+                        <svg width="20" height="20"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" fill="currentColor"/></svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="messages-preview">
+                <div class="message-thread">
+                    <img src="assets/images/user6.jpg" alt="User" class="message-avatar">
+                    <div class="message-preview">
+                        <h5>David Kim</h5>
+                        <p>Hey, are you available for a quick call about the project?</p>
+                        <span>2h ago</span>
+                    </div>
+                </div>
+                <div class="message-thread">
+                    <img src="assets/images/user7.jpg" alt="User" class="message-avatar">
+                    <div class="message-preview">
+                        <h5>Creative Studio</h5>
+                        <p>We've reviewed your proposal and would like to move forward</p>
+                        <span>1d ago</span>
+                    </div>
+                </div>
+                <button class="view-all-messages">Open Message Center</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Messaging Interface (Hidden by default) -->
+    <div class="messaging-interface">
+        <div class="messaging-header">
+            <button class="close-messaging">
+                <svg width="24" height="24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" fill="currentColor"/></svg>
+            </button>
+            <h3>Messages</h3>
+            <button class="new-message">
+                <svg width="24" height="24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" fill="currentColor"/></svg>
+            </button>
+        </div>
+        <div class="message-container">
+            <div class="conversation-list">
+                <div class="conversation-search">
+                    <input type="text" placeholder="Search conversations...">
+                </div>
+                <div class="conversation-item active">
+                    <img src="assets/images/user6.jpg" alt="User" class="conversation-avatar">
+                    <div class="conversation-info">
+                        <h5>David Kim</h5>
+                        <p>Hey, are you available for a quick call...</p>
+                    </div>
+                    <span class="conversation-time">2h</span>
+                </div>
+                <div class="conversation-item">
+                    <img src="assets/images/user7.jpg" alt="User" class="conversation-avatar">
+                    <div class="conversation-info">
+                        <h5>Creative Studio</h5>
+                        <p>We've reviewed your proposal...</p>
+                    </div>
+                    <span class="conversation-time">1d</span>
+                </div>
+            </div>
+            <div class="message-view">
+                <div class="message-history">
+                    <div class="message received">
+                        <p>Hey there! Are you available for a quick call about the project tomorrow?</p>
+                        <span>2:45 PM</span>
+                    </div>
+                    <div class="message sent">
+                        <p>Yes, I should be available after 2pm. What specifically did you want to discuss?</p>
+                        <span>2:52 PM</span>
+                    </div>
+                    <div class="message received">
+                        <p>Mostly the timeline for the design phase and any assets you might need from our team.</p>
+                        <span>2:53 PM</span>
+                    </div>
+                </div>
+                <div class="message-composer">
+                    <textarea placeholder="Type your message..."></textarea>
+                    <button class="send-message">
+                        <svg width="24" height="24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" fill="currentColor"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/connections.js"></script>
+    <script src="js/messaging.js"></script>
+</body>
+</html>
