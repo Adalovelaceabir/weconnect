@@ -1,0 +1,75 @@
+@media (max-width: 1200px) {
+    .content-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .network-panel {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .circular-nav {
+        left: 10px;
+        width: 60px;
+        height: 60px;
+    }
+    
+    .content-grid {
+        grid-template-columns: 1fr;
+        padding: 20px 20px 80px;
+    }
+    
+    .discovery-panel {
+        order: -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .circular-nav {
+        display: none;
+    }
+    
+    .content-grid {
+        padding: 0 0 80px;
+    }
+    
+    .activity-panel, .discovery-panel {
+        border-radius: 0;
+    }
+    
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .messaging-interface {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .status-options {
+        flex-wrap: wrap;
+    }
+    
+    .status-option {
+        flex: 1 0 40%;
+    }
+    
+    .activity-actions {
+        flex-wrap: wrap;
+    }
+    
+    .action-btn {
+        flex: 1 0 40%;
+    }
+    
+    .discovery-filters {
+        overflow-x: auto;
+        padding-bottom: 8px;
+    }
+    
+    .filter-btn {
+        flex-shrink: 0;
+    }
+}
